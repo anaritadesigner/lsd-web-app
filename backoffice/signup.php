@@ -2,8 +2,8 @@
 
 $msgType = "";
 $msg = "";
-$targetDir = "./images/avatars/";
-$image = "./images/default-avatar-icon.jpg";
+$targetDir = "../images/avatars/";
+$image = "../images/default-avatar-icon.jpg";
 $name = "";
 $email = "";
 $pwd = "";
@@ -15,7 +15,7 @@ $country = "";
 // apenas para segundo momento - form submit
 if (isset($_POST["submit"])) {
 
-  require("connection.php");
+  require("../components/connection.php");
 
   // protected againts code injection
   $name = mysqli_real_escape_string($connection, $_POST["username"]);
